@@ -1,0 +1,88 @@
+nodename secondarynodename nodedata 
+
+1、hdfs 分布式文件系统 把存储都分成block块，块的大小 默认为64M
+
+2、文件读写：
+
+读：客户端首先到nodename获取到要获取数据所在的块，然后到块中获取
+
+写：客户端把数据存入块中，然后告知nodename,数据所在的块
+
+
+3、特点：一次写入，多次读写；为存储大文件设计的，不适合存储大量的小文件，否则会使nodename的压力非常大
+
+
+
+
+mapReduce:分而治之，一个大任务分成多个小的子任务（map），并行执行后，合并结果（reduce）
+
+
+JobTracker:1、作业调度；2、分配任务、监控任务执行进度；3、监控tasktracker的状态
+
+TaskTracker:1、执行任务 2、汇报任务状态
+
+
+mapreduce的容错机制:1、重复执行  2、推测执行
+
+
+
+微课20min：超短的时间，净是干货，幽默风趣，通俗易懂，又不乏思考
+
+
+
+边际效应递减：
+
+为什么物以稀为贵
+
+人为什么会喜新厌旧
+
+
+
+
+
+git：分布式版本控制工具；
+
+
+mkdir hello
+
+
+git init
+
+git clone 
+
+git add 
+
+git commit -m 'comment'
+
+
+git status
+
+git log 
+
+git checkout commentid
+
+
+git checkout -b feature-addEmp
+
+git checkout develop
+
+git merge feature-addEmp    #先把feature-addEmp分支中的内容进行提交，然后才能进行合并
+
+git branch -d feature-addEmp
+
+git pull origin develop     
+
+git push origin develop
+
+
+
+
+
+要有丰盛的收获，就要做足投资的功夫。那些所谓的理财知识、投资技巧，都需要细细研究和总结；
+
+
+创业首先要求人们干一行研究一行、精通一行，努力成为行家里手；只有经受不同行业、不同岗位历练，更多地掌握各方面知识和本领，才能使自己成为“通才”
+
+隔行如隔山
+
+隔行不隔理   发现问题、分析问题、解决问题的基本思路和方法相通，有共同的规律可循。
